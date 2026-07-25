@@ -16,4 +16,13 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {
+    "mutable": [
+        var for var in (a, b, c, d, e, f, g, h)
+        if isinstance(var, (list, dict, set, bytearray))
+    ],
+    "immutable": [
+        var for var in (a, b, c, d, e, f, g, h)
+        if not isinstance(var, (list, dict, set, bytearray))
+    ],
+}
