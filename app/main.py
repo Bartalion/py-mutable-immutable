@@ -16,11 +16,13 @@ marks = {
 }
 # (тут вище у твоєму файлі вже стоять 8 оголошених змінних)
 
+aMUTABLE_TYPES = (list, dict, set, bytearray)
+
 all_vars = [var1, var2, var3, var4, var5, var6, var7, var8]
 
 sorted_variables = {
-    "mutable": [v for v in all_vars if isinstance(v, (list, dict, set, bytearray))],
-    "immutable": [v for v in all_vars if not isinstance(v, (list, dict, set, bytearray))],
+    "mutable": [v for v in all_vars if isinstance(v, MUTABLE_TYPES)],
+    "immutable": [v for v in all_vars if not isinstance(v, MUTABLE_TYPES)],
 }
 
 
