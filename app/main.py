@@ -16,7 +16,9 @@ marks = {
 }
 # (тут вище у твоєму файлі вже стоять 8 оголошених змінних)
 
-aMUTABLE_TYPES = (list, dict, set, bytearray)
+aMUTABLE_TYPES = (list, dict, set, bytearray)  # написав aMUTABLE_TYPES
+# а тут використовуєш:
+isinstance(v, MUTABLE_TYPES)  # без "a" на початку!
 
 all_vars = [var1, var2, var3, var4, var5, var6, var7, var8]
 
