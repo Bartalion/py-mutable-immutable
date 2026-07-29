@@ -25,6 +25,7 @@ all_vars = [
     my_favourite_films,
     profile_info,
     marks,
+    created_at,
 ]
 
 sorted_variables = {
