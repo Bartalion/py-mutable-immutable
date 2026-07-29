@@ -14,17 +14,20 @@ marks = {
     "John": 4,
     "Sergio": 3,
 }
-# (тут вище у твоєму файлі вже стоять 8 оголошених змінних)
 
-MUTABLE_TYPES = (list, dict, set, bytearray)  # написав aMUTABLE_TYPES
-# а тут використовуєш:
-isinstance(v, MUTABLE_TYPES)  # без "a" на початку!
+MUTABLE_TYPES = (list, dict, set, bytearray)
 
-all_vars = [var1, var2, var3, var4, var5, var6, var7, var8]
+all_vars = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+]
 
 sorted_variables = {
     "mutable": [v for v in all_vars if isinstance(v, MUTABLE_TYPES)],
     "immutable": [v for v in all_vars if not isinstance(v, MUTABLE_TYPES)],
 }
-
-
