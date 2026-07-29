@@ -14,22 +14,9 @@ marks = {
     "John": 4,
     "Sergio": 3,
 }
-
-MUTABLE_TYPES = (list, dict, set, bytearray)
-
-all_vars = [
-    lucky_number,
-    pi,
-    one_is_a_prime_number,
-    name,
-    my_favourite_films,
-    profile_info,
-    marks,
-    created_at,
-]
 collection_of_coins = {1, 2, 25}
 
+# write your code here
 sorted_variables = {
-    "mutable": [v for v in all_vars if isinstance(v, MUTABLE_TYPES)],
-    "immutable": [v for v in all_vars if not isinstance(v, MUTABLE_TYPES)],
-}
+    "mutable": [
+        var for var in (a, b, c, d, e, f, g, h)
