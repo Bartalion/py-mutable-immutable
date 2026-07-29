@@ -32,4 +32,3 @@ sorted_variables = {
         var for var in all_vars if not isinstance(var, MUTABLE_TYPES)
     ],
 }
-
