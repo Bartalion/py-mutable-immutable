@@ -20,3 +20,4 @@ collection_of_coins = {1, 2, 25}
 sorted_variables = {
     "mutable": [
         var for var in (a, b, c, d, e, f, g, h)
+    ]
