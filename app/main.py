@@ -27,6 +27,7 @@ all_vars = [
     marks,
     created_at,
 ]
+collection_of_coins = {1, 2, 25}
 
 sorted_variables = {
     "mutable": [v for v in all_vars if isinstance(v, MUTABLE_TYPES)],
