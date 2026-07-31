@@ -26,9 +26,10 @@ all_vars = [
     marks,
     collection_of_coins,
 ]
+
+MUTABLE_TYPES = (list, dict, set, bytearray)
+
 sorted_variables = {
     "mutable": [var for var in all_vars if isinstance(var, MUTABLE_TYPES)],
-    "immutable": [
-        var for var in all_vars if not isinstance(var, MUTABLE_TYPES)
-    ],
+    "immutable": [var for var in all_vars if not isinstance(var, MUTABLE_TYPES)],
 }
