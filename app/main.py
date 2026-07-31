@@ -8,7 +8,7 @@ my_favourite_films = [
     "Pulp Fiction",
     "The Good, the Bad and the Ugly",
     "The Matrix",
-]
+   "The Matrix"]
 profile_info = ("michel", "michel@gmail.com", "12345678")
 marks = {
     "John": 4,
@@ -16,23 +16,16 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-MUTABLE_TYPES = (list, dict, set, bytearray)
-
-all_vars = [
-    lucky_number,
-    pi,
-    one_is_a_prime_number,
-    name,
-    my_favourite_films,
-    profile_info,
-    marks,
-    collection_of_coins,
-]
-
+# write your code here
 sorted_variables = {"mutable": [], "immutable": []}
 
-for var in all_vars:
-    if isinstance(var, MUTABLE_TYPES):
-        sorted_variables["mutable"].append(var)
-    else:
-        sorted_variables["immutable"].append(var)
+sorted_variables["immutable"].append(lucky_number)
+sorted_variables["immutable"].append(pi)
+sorted_variables["immutable"].append(one_is_a_prime_number)
+sorted_variables["immutable"].append(name)
+sorted_variables["immutable"].append(profile_info)
+
+sorted_variables["mutable"].append(marks)
+sorted_variables["mutable"].append(collection_of_coins)
+sorted_variables["mutable"].append(my_favourite_films)
+print(sorted_variables)
