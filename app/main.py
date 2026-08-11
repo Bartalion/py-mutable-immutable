@@ -12,11 +12,7 @@ my_favourite_films = [
     "The Matrix",
 ]
 
-profile_info = {
-    "name": "michel",
-    "email": "michel@gmail.com",
-    "phone": "12345678",
-}
+profile_info = ("michel", "michel@gmail.com", "12345678")
 
 marks = {
     "John": 4,
@@ -31,8 +27,8 @@ sorted_variables["immutable"].append(lucky_number)
 sorted_variables["immutable"].append(pi)
 sorted_variables["immutable"].append(one_is_a_prime_number)
 sorted_variables["immutable"].append(name)
+sorted_variables["immutable"].append(profile_info)
 
-sorted_variables["mutable"].append(profile_info)
 sorted_variables["mutable"].append(marks)
 sorted_variables["mutable"].append(collection_of_coins)
 sorted_variables["mutable"].append(my_favourite_films)
